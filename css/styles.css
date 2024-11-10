@@ -8,9 +8,29 @@ body {
 /* #endregion */
 
 /* #region Common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15 px;
+  margin: 0 auto;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -33,6 +53,8 @@ address {
   line-height: 111%;
   letter-spacing: 2%;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .subject {
@@ -50,6 +72,21 @@ address {
 /* #endregion */
 
 /* #region Header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
 .logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -61,6 +98,11 @@ address {
   text-transform: uppercase;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -69,7 +111,16 @@ address {
   color: #f4f4fd;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 0;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
   color: rgb(46, 47, 66);
   font-weight: 500;
   line-height: 150%;
@@ -84,7 +135,18 @@ address {
   color: #404bbf;
 }
 
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   color: rgb(67, 68, 85);
   line-height: 150%;
   letter-spacing: 0.02em;
@@ -95,14 +157,18 @@ address {
 /* #region Hero */
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
+  width: 496px;
   color: rgb(255, 255, 255);
   font-size: 56px;
   font-weight: 700;
   line-height: 107%;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -113,6 +179,10 @@ address {
   letter-spacing: 0.04em;
   text-align: left;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
 }
 
 .hero-button:hover,
@@ -122,6 +192,13 @@ address {
 /* #endregion */
 
 /* #region Benefits */
+.benefits-list {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 120px 0;
+}
 .benefits-name {
   font-size: 20px;
   font-weight: 500;
@@ -140,7 +217,16 @@ address {
 /* #region Team */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
+
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: calc((100% - 3 * 24px) / 4);
+}
+
 .team-title {
   font-size: 36px;
   font-weight: 700;
@@ -153,7 +239,13 @@ address {
 
 .team-card {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 .team-name {
   color: #2e2f42;
   font-size: 20px;
@@ -161,16 +253,22 @@ address {
   line-height: 120%;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-top: 32px;
 }
 
 .team-desc {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-top: 8px;
 }
 /* #endregion */
 
 /* #region Portfolio */
+
+.portfolio {
+  padding: 120px 0;
+}
 .portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -179,6 +277,26 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  align-items: center;
+  gap: 24px 48px;
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8;
+  padding: 32px 16px 32px 16px;
+  border-bottom: 1px solid rgb(231, 233, 252);
+  border-left: 1px solid rgb(231, 233, 252);
+  border-right: 1px solid rgb(231, 233, 252);
 }
 
 .portfolio-name {
