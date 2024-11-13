@@ -93,7 +93,6 @@ address {
 /* #region Header */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 0 15px;
 }
 
 .header-container {
@@ -104,7 +103,6 @@ address {
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 24px;
 }
 
 .logo {
@@ -135,7 +133,6 @@ address {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .nav-link {
@@ -276,10 +273,6 @@ address {
 .team-card {
   width: calc((100% - 3 * 24px) / 4);
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -303,7 +296,6 @@ address {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-top: 8px;
 }
 /* #endregion */
 
@@ -335,14 +327,9 @@ address {
 }
 
 .portfolio-info {
-  display: flex;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .portfolio-name {
@@ -380,7 +367,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-  width: 264px;
-  height: 72px;
+  max-width: 264px;
 }
 /* #endregion */
